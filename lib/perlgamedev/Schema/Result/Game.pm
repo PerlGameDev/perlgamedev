@@ -41,7 +41,32 @@ __PACKAGE__->table("Game");
 
 =head2 image
 
+  data_type: 'blob'
+  is_nullable: 1
+
+=head2 image_header
+
   data_type: 'text'
+  is_nullable: 1
+
+=head2 license
+
+  data_type: 'text'
+  is_nullable: 1
+
+=head2 url
+
+  data_type: 'text'
+  is_nullable: 1
+
+=head2 num_of_downloads
+
+  data_type: 'integer'
+  is_nullable: 1
+
+=head2 rating
+
+  data_type: 'integer'
   is_nullable: 1
 
 =cut
@@ -54,7 +79,17 @@ __PACKAGE__->add_columns(
   "info",
   { data_type => "text", is_nullable => 1 },
   "image",
+  { data_type => "blob", is_nullable => 1 },
+  "image_header",
   { data_type => "text", is_nullable => 1 },
+  "license",
+  { data_type => "text", is_nullable => 1 },
+  "url",
+  { data_type => "text", is_nullable => 1 },
+  "num_of_downloads",
+  { data_type => "integer", is_nullable => 1 },
+  "rating",
+  { data_type => "integer", is_nullable => 1 },
 );
 __PACKAGE__->set_primary_key("id");
 
@@ -76,8 +111,8 @@ __PACKAGE__->has_many(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07002 @ 2010-12-22 16:15:57
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:d5XCILOX8PqeQY4aopLzOA
+# Created by DBIx::Class::Schema::Loader v0.07002 @ 2010-12-22 16:36:07
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:nkjkW1BGx/oFGh9vKYo3VQ
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

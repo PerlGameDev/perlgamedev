@@ -2,7 +2,12 @@ CREATE TABLE Game (
 		ID INTEGER PRIMARY KEY,
 		name TEXT,
 		info TEXT,
-		image TEXT
+		image BLOB,
+		image_header TEXT,
+		license TEXT,
+		url TEXT,
+		num_of_downloads INTEGER,
+		rating INTEGER 
 		);
 
 CREATE TABLE Tag (

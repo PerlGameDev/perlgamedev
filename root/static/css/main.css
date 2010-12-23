@@ -1,0 +1,33 @@
+body {
+    margin-left: 100px;
+}
+
+form {
+    margin-top: 30px;
+    padding-top: 30px;
+    width: 300px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+}
+
+#create {
+    border-top: 1px #000 solid;
+}
+
+.message {
+    display: block;
+    background: #6c6;
+    border: 2px #272 solid;
+    width: 300px;
+    padding: 5px;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    color: #333;
+    text-align: center;
+}

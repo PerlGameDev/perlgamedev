@@ -7,7 +7,7 @@ __PACKAGE__->config(
     schema_class => 'perlgamedev::Schema',
     
     connect_info => {
-        dsn => 'dbi:SQLite:dbname=test.db',
+        dsn => 'dbi:SQLite:dbname=perlgamedev.db',
         user => '',
         password => '',
     }
